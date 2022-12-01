@@ -10,7 +10,7 @@
 API for booking cars.
 
 ## Installation
-First of all, install PostgreSQL at least version 12
+First of all, install PostgreSQL
 ```bash
 $ npm run seed
 $ npm install
@@ -24,4 +24,14 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
+```
+
+## Links
+
+```bash
+# Link api
+http://localhost:5000/api
+
+# Link documentation
+http://localhost:5000/api/docs
 ```
