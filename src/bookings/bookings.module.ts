@@ -1,11 +1,11 @@
-import { DiscountsModule } from './../discounts/discounts.module';
 import { Module } from '@nestjs/common';
-import { BookingsService } from './bookings.service';
-import { BookingsController } from './bookings.controller';
 import { DatabaseModule } from '../database/database.module';
+import { RatesModule } from './../rates/rates.module';
+import { BookingsController } from './bookings.controller';
+import { BookingsService } from './bookings.service';
 
 @Module({
-  imports: [DatabaseModule, DiscountsModule],
+  imports: [DatabaseModule, RatesModule],
   providers: [BookingsService],
   controllers: [BookingsController],
   exports: [],
