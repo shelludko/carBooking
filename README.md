@@ -11,8 +11,14 @@ API for booking cars.
 
 ## Installation
 First of all, install PostgreSQL
+
+Then run seed.
 ```bash
 $ npm run seed
+```
+
+Install dependencies
+```bash
 $ npm install
 ```
 
@@ -35,3 +41,5 @@ http://localhost:5000/api
 # Link documentation
 http://localhost:5000/api/docs
 ```
+
+Create `.env` file. For example `.env.sample`
