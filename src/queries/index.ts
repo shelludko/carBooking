@@ -1,4 +1,4 @@
-export const SELECT_ALL_BOKKINGS = `SELECT id FROM bookings`;
+export const SELECT_ALL_BOOKINGS = `SELECT * FROM bookings`;
 
 export const CAR_IS_FREE = `
        SELECT id
