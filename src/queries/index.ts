@@ -29,7 +29,7 @@ FROM (SELECT
   date_part('days', (date_trunc('month', start_date) + interval '1 month - 1 day')) AS "daysInMonth"
 FROM bookings
 WHERE car_id = $1
-INTERSECT
+UNION
 SELECT
   car_id AS "carId",
   date_part('month', end_date) AS "month",
