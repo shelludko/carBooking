@@ -42,4 +42,4 @@ http://localhost:5000/api
 http://localhost:5000/api/docs
 ```
 
-Create `.env` file. For example `.env.sample`
+Create `.development.env` file. For example `.env.sample`
