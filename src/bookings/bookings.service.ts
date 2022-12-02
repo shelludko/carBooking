@@ -8,7 +8,7 @@ import {
   CAR_IS_FREE,
   CAR_REPORT,
   CREATE_BOOKING,
-  SELECT_ALL_BOKKINGS,
+  SELECT_ALL_BOOKINGS,
 } from 'src/queries';
 import { MAX_RENTAL_PERIOD, MS_PER_DAY, PG_CONNECTION } from '../constants';
 import { RatesService } from './../rates/rates.service';
@@ -22,7 +22,7 @@ export class BookingsService {
   ) {}
 
   async getBookings() {
-    const result = await this.connection.query(SELECT_ALL_BOKKINGS);
+    const result = await this.connection.query(SELECT_ALL_BOOKINGS);
     return result.rows;
   }
 
