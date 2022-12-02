@@ -5,11 +5,11 @@ export const PG_CONNECTION = 'PG_CONNECTION';
 export const dbProvider = {
   provide: PG_CONNECTION,
   useValue: new Pool({
-    host: process.env.POSTGRES_HOST,
+    host: process.env.POSTGRES_HOST || 'localhost',
     port: Number(process.env.POSTGRES_PORT),
     user: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASSWORD,
-    database: process.env.POSTGRES_DB,
+    database: process.env.POSTGRES_DB || 'booking_db',
   }),
 };
 
